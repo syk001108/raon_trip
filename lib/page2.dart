@@ -18,7 +18,7 @@ class Page2 extends StatelessWidget {
         // or simply save your changes to "hot reload" in a Flutter IDE).
         // Notice that the counter didn't reset back to zero; the application
         // is not restarted.
-        primarySwatch: Colors.blue,
+        primaryColor: Colors.white,
       ),
       home: const MyHomePage(title: '라온 트립'),
     );
@@ -54,7 +54,13 @@ class _MyHomePageState extends State<MyHomePage> {
     // than having to individually change instances of widgets.
     return Scaffold(
         appBar: AppBar(
-          title: Text('라온트립'),
+          title: Text('    검색'),
+          titleTextStyle: TextStyle(
+            color: Colors.black,
+            fontSize: 18,
+            fontWeight: FontWeight.w700,
+          ),
+          backgroundColor: Colors.white,
           //centerTitle: true, // 중앙 정렬
           elevation: 0.0,
           actions: <Widget>[
@@ -83,22 +89,22 @@ class _MyHomePageState extends State<MyHomePage> {
           decoration: BoxDecoration(color: Colors.white),
           child: Stack(
             children: [
-              Positioned(
-                left: 32,
-                top: 80,
-                child: Text(
-                  '검색',
-                  style: TextStyle(
-                    color: Colors.black,
-                    fontSize: 24,
-                    fontFamily: 'Inter',
-                    fontWeight: FontWeight.w700,
-                  ),
-                ),
-              ),
+              // Positioned(
+              //   left: 32,
+              //   top: 80,
+              //   child: Text(
+              //     '검색',
+              //     style: TextStyle(
+              //       color: Colors.black,
+              //       fontSize: 24,
+              //       fontFamily: 'Inter',
+              //       fontWeight: FontWeight.w700,
+              //     ),
+              //   ),
+              // ),
               Positioned(
                 left: 34,
-                top: 128,
+                top: 0,
                 child: Text(
                   '해시태그',
                   style: TextStyle(
@@ -111,7 +117,7 @@ class _MyHomePageState extends State<MyHomePage> {
               ),
               Positioned(
                 left: 111,
-                top: 128,
+                top: 0,
                 child: Text(
                   '지역/장소명',
                   style: TextStyle(
@@ -124,7 +130,7 @@ class _MyHomePageState extends State<MyHomePage> {
               ),
               Positioned(
                 left: 55,
-                top: 321,
+                top: 193,
                 child: TextButton(
                   onPressed: () {
                     Navigator.pushNamed(context, '/fourth');
@@ -143,7 +149,7 @@ class _MyHomePageState extends State<MyHomePage> {
               ),
               Positioned(
                 left: 110,
-                top: 152,
+                top: 24,
                 child: Container(
                   width: 82,
                   decoration: ShapeDecoration(
@@ -158,7 +164,7 @@ class _MyHomePageState extends State<MyHomePage> {
               ),
               Positioned(
                 left: 32,
-                top: 171,
+                top: 43,
                 child: SizedBox(
                   width: 327,
                   height: 42,
@@ -199,7 +205,7 @@ class _MyHomePageState extends State<MyHomePage> {
               ),
               Positioned(
                 left: 124,
-                top: 223,
+                top: 95,
                 child: Text(
                   '#놀이공원',
                   style: TextStyle(
@@ -212,7 +218,7 @@ class _MyHomePageState extends State<MyHomePage> {
               ),
               Positioned(
                 left: 204,
-                top: 223,
+                top: 95,
                 child: Text(
                   '#놀이공원',
                   style: TextStyle(
@@ -225,7 +231,7 @@ class _MyHomePageState extends State<MyHomePage> {
               ),
               Positioned(
                 left: 284,
-                top: 223,
+                top: 95,
                 child: Text(
                   '#놀이공원',
                   style: TextStyle(
@@ -238,7 +244,7 @@ class _MyHomePageState extends State<MyHomePage> {
               ),
               Positioned(
                 left: 44,
-                top: 223,
+                top: 95,
                 child: Text(
                   '#놀이공원',
                   style: TextStyle(
@@ -251,7 +257,7 @@ class _MyHomePageState extends State<MyHomePage> {
               ),
               Positioned(
                 left: 31,
-                top: 301,
+                top: 173,
                 child: Container(
                   width: 328,
                   height: 454,
@@ -264,7 +270,7 @@ class _MyHomePageState extends State<MyHomePage> {
               ),
               Positioned(
                 left: 44,
-                top: 272,
+                top: 144,
                 child: Text(
                   '최근 검색 기록',
                   style: TextStyle(
@@ -277,7 +283,7 @@ class _MyHomePageState extends State<MyHomePage> {
               ),
               Positioned(
                 left: 124,
-                top: 321,
+                top: 193,
                 child: Text(
                   'X',
                   style: TextStyle(
@@ -290,7 +296,7 @@ class _MyHomePageState extends State<MyHomePage> {
               ),
               Positioned(
                 left: 323,
-                top: 180,
+                top: 52,
                 child: Container(
                   width: 25,
                   height: 25,

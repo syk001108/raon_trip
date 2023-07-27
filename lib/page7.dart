@@ -73,37 +73,37 @@ class _MyHomePageState extends State<MyHomePage> {
               ),
             ),
           ),
-          Positioned(
-            left: 211,
-            top: 508,
-            child: Container(
-              width: 73,
-              height: 24,
-              decoration: ShapeDecoration(
-                color: Color(0xFFE7E7E7),
-                shape: RoundedRectangleBorder(
-                  borderRadius: BorderRadius.circular(15),
-                ),
-              ),
-            ),
-          ),
-          Positioned(
-            left: 225,
-            top: 514,
-            child: SizedBox(
-              width: 65,
-              height: 16.45,
-              child: Text(
-                '# 놀이공원',
-                style: TextStyle(
-                  color: Colors.black,
-                  fontSize: 10,
-                  fontFamily: 'Inter',
-                  fontWeight: FontWeight.w400,
-                ),
-              ),
-            ),
-          ),
+          // Positioned(
+          //   left: 211,
+          //   top: 508,
+          //   child: Container(
+          //     width: 73,
+          //     height: 24,
+          //     decoration: ShapeDecoration(
+          //       color: Color(0xFFE7E7E7),
+          //       shape: RoundedRectangleBorder(
+          //         borderRadius: BorderRadius.circular(15),
+          //       ),
+          //     ),
+          //   ),
+          // ),
+          // Positioned(
+          //   left: 225,
+          //   top: 514,
+          //   child: SizedBox(
+          //     width: 65,
+          //     height: 16.45,
+          //     child: Text(
+          //       '# 놀이공원',
+          //       style: TextStyle(
+          //         color: Colors.black,
+          //         fontSize: 10,
+          //         fontFamily: 'Inter',
+          //         fontWeight: FontWeight.w400,
+          //       ),
+          //     ),
+          //   ),
+          // ),
           Positioned(
             left: 35,
             top: 433,

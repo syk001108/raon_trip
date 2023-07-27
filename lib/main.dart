@@ -17,6 +17,7 @@ class MyApp extends StatelessWidget {
     return MaterialApp(
       title: 'RaonTrip',
       theme: ThemeData(
+        primaryColor: Colors.white,
         // This is the theme of your application.
         //
         // Try running your application with "flutter run". You'll see the
@@ -26,7 +27,7 @@ class MyApp extends StatelessWidget {
         // or simply save your changes to "hot reload" in a Flutter IDE).
         // Notice that the counter didn't reset back to zero; the application
         // is not restarted.
-        primarySwatch: Colors.blue,
+        //primarySwatch: Colors.blue,
       ),
       home: const MyHomePage(title: '라온트립'),
       routes: {
@@ -68,12 +69,20 @@ class _MyHomePageState extends State<MyHomePage> {
     // than having to individually change instances of widgets.
     return Scaffold(
       appBar: AppBar(
-        title: Text('라온트립'),
+        title: Text('    라온트립'),
+        titleTextStyle: TextStyle(
+          color: Colors.black,
+          fontSize: 18,
+          fontWeight: FontWeight.w700,
+        ),
+        backgroundColor: Colors.white,
         //centerTitle: true, // 중앙 정렬
         elevation: 0.0,
         actions: <Widget>[
           IconButton(
             icon: Icon(Icons.search), // 검색 아이콘 생성
+            //iconSize: 25,
+            color: Colors.black,
             onPressed: () {
               // 아이콘 버튼 실행
               Navigator.push(context,
@@ -83,8 +92,11 @@ class _MyHomePageState extends State<MyHomePage> {
           ),
           IconButton(
             icon: Icon(Icons.menu), // 햄버거버튼 아이콘 생성
+            color: Colors.black,
             onPressed: () {
               // 아이콘 버튼 실행
+              Navigator.push(context,
+                  MaterialPageRoute(builder: (context) => const Page7()));
               // print('Search button is clicked');
             },
           ),
